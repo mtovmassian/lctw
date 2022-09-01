@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int * Stack_init(int stack_size)
+{
+    int stack[stack_size];
+
+    return stack;
+}
+
+int main(int argc, char *argv[])
+{
+    printf("Hello Morray");
+
+    return 0;
+}
