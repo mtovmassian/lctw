@@ -12,8 +12,8 @@ build:
 build-martin:
 	gcc $(CFLAGS) $(SRC_MARTIN) -o $(TARGET_MARTIN)
 
-run: 
-	gcc $(CFLAGS) $(SRC) -o $(TARGET) && ./$(TARGET) $(ARGS)
+run: build 
+	./$(TARGET) $(ARGS)
 
-run-martin: 
-	gcc $(CFLAGS) $(SRC_MARTIN) -o $(TARGET) && ./$(TARGET_MARTIN) $(ARGS)
+run-martin: build-martin
+	./$(TARGET_MARTIN) $(ARGS)
